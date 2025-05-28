@@ -1,0 +1,180 @@
+.sidebar {
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ef 100%);
+  border-radius: 2rem;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  max-width: 400px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  height: 95vh;
+  position: relative;
+  margin: 2rem 0 2rem 2rem;
+}
+
+.topRow {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.settingsBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #4a4e69;
+  transition: color 0.2s;
+}
+.settingsBtn:hover {
+  color: #22223b;
+}
+/* 
+.searchWrapper {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.searchInputWithIcon {
+  position: relative;
+  width: 100%;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #bfc0c0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.searchInputWithIcon input {
+  padding-left: 2.5rem !important;
+} */
+
+.searchWrapper {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  box-sizing: border-box;
+}
+
+.searchForm {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.searchInputWithIcon {
+  position: relative;
+  flex: 1; /* 🔹 input takes remaining space */
+  width: 100%;
+}
+
+.searchInputWithIcon input {
+  width: 100%;
+  padding-left: 3rem !important;
+  box-sizing: border-box;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  top: 33%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #bfc0c0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.weatherIconWrapper {
+  margin-bottom: 1.5rem;
+}
+
+.weatherIcon {
+  width: 120px;
+  height: 120px;
+}
+
+.temp {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #22223b;
+  margin-bottom: 0.5rem;
+}
+
+.dateTime {
+  font-size: 1.1rem;
+  color: #4a4e69;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #4a4e69;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cityInfo {
+  font-size: 1.1rem;
+  color: #22223b;
+  font-weight: 500;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.cityImageWrapper {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cityImage {
+  width: 90%;
+  border-radius: 1.2rem;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  min-height: 80px;
+  max-height: 120px;
+}
+
+.sidebarError {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.sidebarError :global(.errorContainer) {
+  background-color: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.sidebarError :global(.errorIcon) {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebarError :global(.errorTitle) {
+  color: #dc2626;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.sidebarError :global(.errorMessage) {
+  color: #991b1b;
+  font-size: 0.875rem;
+} 

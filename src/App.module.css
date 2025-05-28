@@ -1,0 +1,75 @@
+.dashboardLayout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f1f5f9;
+}
+
+.mainArea {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.unitToggle {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.unitToggle button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  background: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.unitToggle button.activeUnit {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.loading {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+}
+
+.mainError {
+  max-width: 600px;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.mainError :global(.errorContainer) {
+  background-color: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.mainError :global(.errorIcon) {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.mainError :global(.errorTitle) {
+  color: #dc2626;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.mainError :global(.errorMessage) {
+  color: #991b1b;
+  font-size: 1.1rem;
+  line-height: 1.5;
+} 

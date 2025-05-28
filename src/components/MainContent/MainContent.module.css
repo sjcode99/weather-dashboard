@@ -1,0 +1,196 @@
+.mainContent {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  background: #f9f9fb;
+  border-radius: 2rem;
+  /* margin: 1rem; */
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+
+}
+
+[data-theme='dark'] {
+  background: #232946;
+  color: #fff;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.themeToggle {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.themeToggle:hover {
+  background: #e0e7ef;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+
+.tabs {
+  display: flex;
+  gap: 2rem;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #4a4e69;
+  padding-bottom: 0.7rem;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+  letter-spacing: 0.01em;
+  
+}
+.tabButton{
+  display: flex;
+  align-items: center;  /* vertical centering */
+  justify-content: center; 
+}
+
+.tabs button:hover {
+  color: #22223b;
+}
+.tabs .active {
+  color: #22223b;
+  border-bottom: 3px solid #22223b;
+}
+
+.forecastPlaceholder {
+  margin-bottom: 2.5rem;
+}
+
+.forecastCards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 120px;
+  color: #bfc0c0;
+  font-size: 1.1rem;
+}
+
+.forecastCard {
+  background: #f8fafc;
+  border-radius: 1.5rem;
+  border: 1.5px solid #e0e7ef;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 1rem 1.2rem 1.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 110px;
+  min-height: 180px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  justify-content: center;
+}
+.forecastCard:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  transform: translateY(-4px) scale(1.05);
+}
+
+.day {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #22223b;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.01em;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0.7rem;
+}
+
+.temps {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  margin-bottom: 0.2rem;
+}
+
+.max {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #22223b;
+}
+
+.min {
+  font-size: 1rem;
+  color: #bfc0c0;
+  font-weight: 500;
+  margin-left: 0.2rem;
+}
+
+.main {
+  font-size: 1rem;
+  color: #4a4e69;
+  margin-top: 0.4rem;
+  font-weight: 500;
+}
+
+.unitToggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.unitToggle button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  background: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.unitToggle button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.unitToggle button.activeUnit {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+} 
