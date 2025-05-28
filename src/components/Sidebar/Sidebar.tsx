@@ -10,14 +10,16 @@ interface SidebarProps {
 }
 
 export const Sidebar = ({ weatherData, error, onSearch }: SidebarProps) => {
-  // Format date and time
+  // Format date and time in IST
   const getDateTime = () => {
     if (!weatherData) return '';
     const date = new Date((weatherData.dt + (weatherData.timezone || 0)) * 1000);
-    return date.toLocaleString(undefined, {
+    return date.toLocaleString('en-IN', {
       weekday: 'long',
-      hour: '2-digit',
-      minute: '2-digit',
+      // hour: '2-digit',
+      // minute: '2-digit',
+      // hour12: true,
+      timeZone: 'Asia/Kolkata'
     });
   };
 

@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { WeatherData, WeatherError } from '../types/weather';
 
 const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
-const BASE_URL = 'https://api.openweathermap.org/data/2.5';
+const BASE_URL = import.meta.env.VITE_API_BASE;
 
 export const fetchWeatherData = async (city: string, units: 'metric' | 'imperial' = 'metric'): Promise<WeatherData> => {
   try {
